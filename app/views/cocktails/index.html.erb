@@ -1,0 +1,15 @@
+<h1> This is a list of all the Cocktails!</h1>
+
+
+<% @cocktails.each do |cocktail| %>
+<ul>
+  <li id='cocktail' class='cocktail-box'>
+    <h2><%= cocktail.name %></h2>
+    <td><%= link_to "- Show", cocktail %></td>
+    <td><%= link_to "- Edit", edit_cocktail_path(cocktail) %></td>
+  </li>
+</ul>
+<% end %>
+
+
+

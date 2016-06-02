@@ -1,0 +1,12 @@
+# In order to create something it has to go to the create url
+
+<%= form_for [@cocktail, @dose] do |f| %>
+<%= f.label :description %>
+<%= f.text_field :description %>
+<%= f.select :ingredient_id do %>
+<% @ingredients.each do |i| -%>
+<%= content_tag(:option, i.name, value: i.id) %>
+<% end %>
+<% end %>
+<%= f.submit %>
+<% end %>

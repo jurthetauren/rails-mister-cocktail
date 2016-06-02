@@ -1,0 +1,12 @@
+<h1> This is a list of all the Doses!</h1>
+
+
+<% @doses.each do |dose| %>
+<ul>
+  <li id='dose' class='dose-box'>
+    <h2><%= dose.description %></h2>
+    <td><%= link_to "- Show", cocktail_dose_path(@cocktail, dose) %></td>
+  </li>
+</ul>
+<% end %>
+
