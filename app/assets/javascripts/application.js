@@ -14,3 +14,8 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+
+# Le Wagon JavaScript assets
+// app/assets/javascripts/application.js
+//= require bootstrap-sprockets
+//= require_tree .
